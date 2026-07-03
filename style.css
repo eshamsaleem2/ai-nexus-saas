@@ -2277,3 +2277,163 @@ body.light-mode .contact-form textarea{
     background:#ffffff !important;
 
 }
+
+
+/* ===========================
+   MOBILE RESPONSIVE HERO
+=========================== */
+
+@media (max-width: 768px){
+
+    .hero .row{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-dashboard{
+        margin-top:40px;
+        width:100%;
+        display:flex;
+        justify-content:center;
+    }
+
+    .dashboard-card{
+        width:100%;
+        max-width:340px;
+    }
+
+    .floating-one,
+    .floating-two{
+        display:none;
+    }
+
+    .hero-title{
+        font-size:42px;
+    }
+
+    .hero-text{
+        font-size:16px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .floating-one{
+
+        left:10px;
+        bottom:-20px;
+        transform:scale(.8);
+
+    }
+
+    .floating-two{
+
+        right:10px;
+        top:20px;
+        transform:scale(.8);
+
+    }
+
+}
+
+
+/* ===========================
+   MOBILE HERO CARDS
+=========================== */
+
+@media (max-width:768px){
+
+    .hero-dashboard{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+    }
+
+    .dashboard-card{
+        width:100%;
+        max-width:320px;
+        margin:0 auto;
+    }
+
+    .floating-one,
+    .floating-two,
+    .status-card,
+    .report-card{
+
+        position:static !important;
+
+        width:100%;
+
+        max-width:320px;
+
+        margin:15px auto;
+
+        transform:none !important;
+
+        left:auto !important;
+
+        right:auto !important;
+
+        top:auto !important;
+
+        bottom:auto !important;
+
+    }
+
+}
+
+
+@media (max-width:768px){
+
+    .mobile-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:18px;
+        margin-top:25px;
+    }
+
+    .mobile-buttons .btn,
+    .mobile-buttons button{
+        width:100%;
+    }
+
+    .theme-toggle{
+        margin-top:18px;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .login-btn{
+        margin-bottom:18px;
+    }
+
+    .get-started-btn{
+        margin-bottom:18px;
+    }
+
+    .theme-toggle{
+        margin-top:18px;
+    }
+
+}
+
+
+/* Light Mode */
+body.light-theme .navbar-toggler,
+body.light-theme .navbar-toggler i,
+body.light-theme .navbar-toggler svg,
+body.light-theme .fa-bars,
+body.light-theme .bi-list,
+body.light-theme .menu-toggle{
+    color:#111 !important;
+    border-color:#111 !important;
+}
+
+/* Bootstrap Navbar Icon */
+body.light-theme .navbar-toggler-icon{
+    filter: invert(1);
+}
