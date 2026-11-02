@@ -2437,3 +2437,16 @@ body.light-theme .menu-toggle{
 body.light-theme .navbar-toggler-icon{
     filter: invert(1);
 }
+
+
+@media (max-width: 768px) {
+    .signupBtn {
+        margin-top: 15px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #themeToggle {
+        margin-top: 15px !important;
+    }
+}
